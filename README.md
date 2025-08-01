@@ -5,7 +5,7 @@ This repository contains the official implementation of the paper **"EEG-SCMM: S
 + [ArXiv Preprint](https://arxiv.org/abs/2408.09186)
 
 # Overview
-This paper proposes a novel **S**oft **C**ontrastive **M**asked **M**odeling (**SCMM**) framework to tackle the critical challenge of cross-corpus generalization in the field of EEG-based emotion recognition. Unlike traditional contrastive learning-based models, CLSCMM integrates soft contrastive learning with a hybrid masking strategy to effectively capture the "short-term continuity" characteristics inherent in human emotions and produce stable and generalizable EEG representations. Additionally, a similarity-aware aggregator is introduced to fuse complementary information from semantically related samples, thereby enhancing the fine-grained feature representation capability of the model. Extensive experimental results on three well-known datasets (SEED, SEED-IV, and DEAP) demonstrate that SCMM consistently achieves state-of-the-art (SOTA) performance in cross-corpus EEG-based emotion recognition tasks under both same-class and different-class conditions. In summary, the main contributions of SCMM are outlined as follows:
+This paper proposes a novel **S**oft **C**ontrastive **M**asked **M**odeling (**SCMM**) framework to tackle the critical challenge of cross-corpus generalization in the field of EEG-based emotion recognition. Unlike traditional contrastive learning-based models, SCMM integrates soft contrastive learning with a hybrid masking strategy to effectively capture the "short-term continuity" characteristics inherent in human emotions and produce stable and generalizable EEG representations. Additionally, a similarity-aware aggregator is introduced to fuse complementary information from semantically related samples, thereby enhancing the fine-grained feature representation capability of the model. Extensive experimental results on three well-known datasets (SEED, SEED-IV, and DEAP) demonstrate that SCMM consistently achieves state-of-the-art (SOTA) performance in cross-corpus EEG-based emotion recognition tasks under both same-class and different-class conditions. In summary, the main contributions of SCMM are outlined as follows:
 + We propose a novel SCMM framework to address three key challenges (insufficient generalization capability, modeling strategy limitation, and ignorance of emotional continuity) in cross-corpus EEG-based emotion recognition.
 + Inspired by the nature of emotions, we introduce a soft weighting mechanism that assigns similarity scores to sample pairs to capture the similarity relationships between different samples. As a result, better feature representations of EEG signals are learned in a self-supervised manner.
 + We develop a new hybrid masking strategy to generate diverse masked samples by considering both channel and feature relationships, which is essential for enhancing contrastive learning. In addition, we introduce a similarity-aware aggregator to fuse complementary information from semantically related samples, enabling fine-grained feature learning and improving the model's overall capability.
@@ -15,3 +15,22 @@ This paper proposes a novel **S**oft **C**ontrastive **M**asked **M**odeling (**
 ![Key Idea](https://github.com/Kyler-RL/SCMM/blob/main/images/KeyIdea.png)
 ### Model Structure
 ![Model Structure](https://github.com/Kyler-RL/SCMM/blob/main/images/ModelStructure.png)
+
+# Citation
+### 1. ACMMM 2025  
+@inproceedings{\
+    liu2025eegscmm,\
+    title={EEG-SCMM: Soft Contrastive Masked Modeling for Cross-Corpus EEG-Based Emotion Recognition},\
+    author={Liu, Qile and Ye, Weishan and Zhang, Lingli and Liang, Zhen},\
+    booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},\
+    year={2025}\
+}
+### or
+### 2. ArXiv Preprint
+@article{\
+    liu2025eegscmm,\
+    title={EEG-SCMM: Soft Contrastive Masked Modeling for Cross-Corpus EEG-Based Emotion Recognition},\
+    author={Liu, Qile and Ye, Weishan and Zhang, Lingli and Liang, Zhen},\
+    journal={arXiv preprint arXiv:2408.09186},\
+    year={2025}\
+  }
